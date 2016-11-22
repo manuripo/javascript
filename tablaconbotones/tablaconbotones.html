@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Div Molon</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<script language="javascript" src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script>
+
+$(document).ready(
+
+function inicializarEventos()
+{
+  $("#boton1").click(asociarClase);
+  $("#boton2").click(desasociarClase);
+});
+
+function asociarClase()
+{
+  $("thead").addClass("recuadro");
+}
+
+function desasociarClase()
+{
+ $("thead").removeClass("recuadro");
+};
+
+</script>
+</head>
+<body> 
+
+<table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>Tip:</b> The thead, tbody, and tfoot elements will not affect the layout of the table by default. However, you can use CSS to style these elements.</p>
+
+<input type="button" id="boton1" value="Asociar clase">
+<input type="button" id="boton2" value="Desasociar 
+clase">
+
+</body> 
+</html>

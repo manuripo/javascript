@@ -1,0 +1,17 @@
+thead {color:green;}
+tbody {color:blue;}
+tfoot {color:red;}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+.recuadro {
+  background-color:#ffffcc;
+  font-family:verdana;
+  font-size:14px;
+
+ }
+
+
+
